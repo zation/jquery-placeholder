@@ -169,7 +169,7 @@
 			}
 			$input.addClass('placeholder');
 			$input[0].value = $input.attr('placeholder');
-		} else if (this.id !== 'tokenfield-tokenfield') {
+		} else if (!/\d+-tokenfield$/.test(id)) {
 			$input.removeClass('placeholder');
 		}
 	}
