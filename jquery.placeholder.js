@@ -30,7 +30,8 @@
 					'focus.placeholder': clearPlaceholder,
 					'blur.placeholder': setPlaceholder
 				})
-				.data('placeholder-enabled', true);
+				.data('placeholder-enabled', true)
+				.trigger('blur.placeholder');
 				setPlaceholder.call($this);
 			return $this;
 		};
