@@ -170,7 +170,9 @@
 				// Note: `$input[0] != input` now!
 			}
 			$input.addClass('placeholder');
-			$input[0].value = $input.attr('placeholder');
+			if ($input[0]) {
+				$input[0].value = $input.attr('placeholder');
+			}
 		} else if (!/\d+-tokenfield$/.test(id)) {
 			$input.removeClass('placeholder');
 		}
